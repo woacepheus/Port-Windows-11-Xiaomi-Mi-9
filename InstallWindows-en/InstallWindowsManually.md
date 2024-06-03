@@ -1,10 +1,10 @@
-# Install Windows on POCO X3 Pro
+# Install Windows on Xiaomi Mi 9
 
-![POCO X3 Pro Windows](https://github.com/woa-vayu/src_vayu_windows/blob/main/2PocoX3ProWindows.png)
+![Xiaomi Mi 9 Windows](https://github.com/woacepheus/src_cepheus_windows/raw/main/cepheus.png)
 
 Table of Contents:
 
-* [Install Windows on POCO X3 Pro](#install-windows-on-surface-duo-1st-gen)
+* [Install Windows on Xiaomi Mi 9](#install-windows-on-surface-duo-1st-gen)
    * [Files/Tools Needed 📃](#filestools-needed-)
    * [What you will get 🛒](#what-you-will-get-)
 * [Steps 🛠️](#steps-️)
@@ -19,29 +19,30 @@ Table of Contents:
 
 ## Files/Tools Needed 📃
 
-- You will need the following files from the [BSP Release page](https://github.com/woa-vayu-archive/POCOX3Pro-Releases/releases/latest):
+- You will need the following files from the [BSP Release page](https://github.com/qaz6750/XiaoMi9-Drivers/releases/latest):
 
 UEFI Image:
 
 | File Name                              | Target Device         |
 |----------------------------------------|-----------------------|
-| POCO.X3.Pro.UEFI.img                   | POCO X3 Pro           |
+| MuCepheusSecureBoot.img                | Xiaomi Mi 9           |
 
 Windows Drivers:
 
 | File Name                                       | Target Device         |
 |-------------------------------------------------|-----------------------|
-| POCOX3Pro-Drivers-v2XXX.XX-Desktop.7z           | POCO X3 Pro           |
+| XiaoMi9-Drivers-Desktop.zip                     | Xiaomi Mi 9           |
+| XiaoMi9-Drivers-Desktop.7z                      | Xiaomi Mi 9           |
 
 - SHRP/TWRP image:
 
-11 image supports Android™ 11 encryption
-12 image supports Android™ 12/12.1/13/14 encryption
+Twrp image supports Android™ 11 encryption
+Shrp image supports Android™ 12/12.1/13/14 encryption
 
 | File Name                                       | Target Device         |
 |-------------------------------------------------|-----------------------|
-| [shrp-3.2_12-vayu.img](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/download/Recoveries/shrp-3.2_12-vayu.img) | POCO X3 Pro |
-| [twrp-3.7.0_11-vayu-mod4epsilon.img](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/download/Recoveries/twrp-3.7.0_11-vayu-mod4epsilon.img) | POCO X3 Pro |
+| [shrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/shrp-recovery.img) | Xiaomi Mi 9 |
+| [twrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/twrp-cepheus.img) | Xiaomi Mi 9 |
 
 - [Platform Tools from Google (ADB and Fastboot)](https://developer.android.com/studio/releases/platform-tools)
 - An ARM64 Windows build of your choice that meets the minimum system requirements (specifically the install.wim file). You can use [UUPMediaCreator](https://github.com/gus33000/UUPMediaCreator) for this. [Here's a guide on how to use it.](/InstallWindows-en/ISO/GetWindows.md)
@@ -68,7 +69,7 @@ Windows Drivers:
 
 ## What you will get 🛒
 
-You will end up with both Android™ and Windows on your POCO X3 Pro. Android™ and Windows will both split the internal storage.
+You will end up with both Android™ and Windows on your Xiaomi Mi 9. Android™ and Windows will both split the internal storage.
 
 Android™ will boot normally, and you will have to use a PC to boot Windows when needed, unless you flash UEFI in boot partition or use M3K WoA Helper.
 
@@ -76,7 +77,7 @@ Android™ will boot normally, and you will have to use a PC to boot Windows whe
 
 ## Acquiring all files
 
-Here's how to acquire a Driver archive file and the matching UEFI image for POCO X3 Pro:
+Here's how to acquire a Driver archive file and the matching UEFI image for Xiaomi Mi 9:
 
 <table>
 <tr>
@@ -89,13 +90,13 @@ Here's how to acquire a Driver archive file and the matching UEFI image for POCO
 <tr>
 <td>
 
-[POCOX3Pro-Drivers-v2406.06-Desktop.7z](https://github.com/woa-vayu-archive/POCOX3Pro-Releases/releases/download/2406.06/POCOX3Pro-Drivers-v2406.06-Desktop.7z)
+[XiaoMi9-Drivers-Desktop.7z](https://github.com/qaz6750/XiaoMi9-Drivers/releases/download/1.3.5/XiaoMi9-Drivers-Desktop.7z)
 </td>
 <td>
 
-- [Fast Boot](https://github.com/woa-vayu-archive/POCOX3Pro-Releases/releases/download/2406.06/POCO.X3.Pro.UEFI-v2406.06.img)
+- [Fast Boot](https://github.com/qaz6750/XiaoMi9-Drivers/releases/download/1.3.5/MuCepheusSecureBoot.img)
 </td>
-<td>POCO X3 Pro</td>
+<td>Xiaomi Mi 9</td>
 <td>Windows 10 Version 2004 and higher</td>
 <td><details>
 
@@ -146,7 +147,7 @@ If not already done, please first unlock the bootloader. Come back once you're d
 
 ## Partitioning
 
-If not already done, please proceed with the [Partitioning](Partitioning.md) guide for POCO X3 Pro. Come back once you're done. If you already followed this guide, please instead follow the [Reinstall Windows](ReinstallWindows.md) guide, not this one.
+If not already done, please proceed with the [Partitioning](Partitioning.md) guide for Xiaomi Mi 9. Come back once you're done. If you already followed this guide, please instead follow the [Reinstall Windows](ReinstallWindows.md) guide, not this one.
 
 ## Getting to Mass Storage Mode
 
@@ -186,11 +187,11 @@ adb shell msc
 
 - If it asks you to run it once again, do so
 
-POCO X3 Pro should now be in USB Mass Storage Mode.
+Xiaomi Mi 9 should now be in USB Mass Storage Mode.
 
 ## Installing Windows
 
-- Make sure you are in Mass Storage Mode, that your POCO X3 Pro is plugged into your PC
+- Make sure you are in Mass Storage Mode, that your Xiaomi Mi 9 is plugged into your PC
 - Mount the partitions you have created using diskpart and assign them some letters:
 
 ```batch
@@ -200,7 +201,7 @@ YOU DO NOT HAVE TO USE THE LETTERS WE USE AT ALL!!!, THEY ONLY NEED TO BE FREE L
 IF ONE PARTITION IS ALREADY ASSIGNED, YOU ALSO DO NOT NEED TO ASSIGN IT AGAIN IF YOU DONT WANT TO.
 
 # list disk
-Find the POCO X3 Pro Disk, and take note of the number.
+Find the Xiaomi Mi 9 Disk, and take note of the number.
 # select disk <number>
 # list partition
 You will be able to recognize the partitions we made earlier by their size. take note of the ESP and WIN partition numbers.
@@ -233,13 +234,14 @@ Windows is now installed but has no drivers.
 
 ## Installing the drivers
 
-- Download the latest driver package from https://github.com/woa-vayu/POCOX3Pro-Releases/releases/latest
+- Download the latest driver package from https://github.com/qaz6750/XiaoMi9-Drivers/releases/latest
 
 Note: Here's a table of what to download if you're a bit lost:
 
-| File Name                                      | Target Device         |
-|------------------------------------------------|-----------------------|
-| POCOX3Pro-Drivers-XXXX.XX-Desktop-Epsilon.zip  | POCO X3 Pro           |
+| File Name                                       | Target Device         |
+|-------------------------------------------------|-----------------------|
+| XiaoMi9-Drivers-Desktop.zip                     | Xiaomi Mi 9           |
+| XiaoMi9-Drivers-Desktop.7z                      | Xiaomi Mi 9           |
 
 - Extract the driver package, and go to the folder where you extracted it.
 
@@ -255,7 +257,7 @@ Congratulations, you just installed your drivers!
 
 - You can now reboot your phone using ```adb reboot bootloader```. You will be able to boot to Android™ and your phone will work normally. Set it up if you need it.
 
-You will be back into POCO X3 Pro bootloader.
+You will be back into Xiaomi Mi 9 bootloader.
 
 ## Boot Windows 🚀
 
@@ -275,7 +277,7 @@ If you did everything right, Windows will now boot! Enjoy!
 
 **Note:** If the Touch keyboard won't show up in OOBE, touch somewhere else (to let the text box loose focus) and then touch into the text box again. As an alternative, you can use the On-Screen Keyboard.
 
-Let Windows set itself up, and come back once you're on the Windows Desktop on your POCO X3 Pro
+Let Windows set itself up, and come back once you're on the Windows Desktop on your Xiaomi Mi 9
 
 ## Boot Windows again after initial installation
 
@@ -319,6 +321,6 @@ _Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the M
 
 _**Limited emergency calling**_
 
-_Running Windows on your POCO X3 Pro is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
+_Running Windows on your Xiaomi Mi 9 is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
 
 _**Hello from Seattle (US), France, Italy.**_

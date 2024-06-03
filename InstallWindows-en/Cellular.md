@@ -1,16 +1,16 @@
-# Making Cellular work on POCO X3 Pro
+# Making Cellular work on Xiaomi Mi 9
 
 ## Files/Tools Needed 📃
 
 - SHRP/TWRP image:
 
-11 image supports Android™ 11 encryption
-12 image supports Android™ 12/12.1/13/14 encryption
+Twrp image supports Android™ 11 encryption
+Shrp image supports Android™ 12/12.1/13/14 encryption
 
 | File Name                                       | Target Device         |
 |-------------------------------------------------|-----------------------|
-| [shrp-3.2_12-vayu.img](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/download/Recoveries/shrp-3.2_12-vayu.img) | POCO X3 Pro |
-| [twrp-3.7.0_11-vayu-mod4epsilon.img](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/download/Recoveries/twrp-3.7.0_11-vayu-mod4epsilon.img) | POCO X3 Pro |
+| [shrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/shrp-recovery.img) | Xiaomi Mi 9 |
+| [twrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/twrp-cepheus.img) | Xiaomi Mi 9 |
 
 - Windows Command Prompt, Linux is not required
 
@@ -37,7 +37,7 @@ adb shell msc
 
 - If it asks you to run it once again, do so
 
-POCO X3 Pro should now be in USB Mass Storage Mode.
+Xiaomi Mi 9 should now be in USB Mass Storage Mode.
 
 ## Dumping Modem partitions
 
@@ -68,6 +68,6 @@ _Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the M
 
 _**Limited emergency calling**_
 
-_Running Windows on your POCO X3 Pro is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
+_Running Windows on your Xiaomi Mi 9 is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
 
 _**Hello from Seattle (US), France, Italy.**_

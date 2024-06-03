@@ -1,16 +1,16 @@
-# Partitioning POCO X3 Pro
+# Partitioning Xiaomi Mi 9
 
 ## Files/Tools Needed 📃
 
 - SHRP/TWRP image:
 
-11 image supports Android™ 11 encryption
-12 image supports Android™ 12/12.1/13/14 encryption
+Twrp image supports Android™ 11 encryption
+Shrp image supports Android™ 12/12.1/13/14 encryption
 
 | File Name                                       | Target Device         |
 |-------------------------------------------------|-----------------------|
-| [shrp-3.2_12-vayu.img](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/download/Recoveries/shrp-3.2_12-vayu.img) | POCO X3 Pro |
-| [twrp-3.7.0_11-vayu-mod4epsilon.img](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/download/Recoveries/twrp-3.7.0_11-vayu-mod4epsilon.img) | POCO X3 Pro |
+| [shrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/shrp-recovery.img) | Xiaomi Mi 9 |
+| [twrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/twrp-cepheus.img) | Xiaomi Mi 9 |
 
 - [Platform Tools from Google (ADB and Fastboot)](https://developer.android.com/studio/releases/platform-tools)
 - A Windows PC
@@ -36,7 +36,7 @@
 
 ## What you will get 🛒
 
-You will end up with both Android™ and Windows on your POCO X3 Pro. Android™ and Windows will both split the internal storage.
+You will end up with both Android™ and Windows on your Xiaomi Mi 9. Android™ and Windows will both split the internal storage.
 
 Android™ will boot normally, and you will have to use a PC to boot Windows when needed, unless you flash UEFI in boot partition or use M3K WoA Helper.
 
@@ -82,7 +82,7 @@ Save the file on your computer, and extract the zip file by opening it, and sele
 
 ## Going to the Bootloader menu
 
-- Start by turning on your POCO X3 Pro into Android™, and unlock it
+- Start by turning on your Xiaomi Mi 9 into Android™, and unlock it
 
 - Open a command prompt on your PC
 
@@ -105,7 +105,7 @@ adb devices
 adb reboot bootloader
 ```
 
-You will be rebooted to Poco X3 Pro's bootloader.
+You will be rebooted to Xiaomi Mi 9's bootloader.
 
 ## Booting to SHRP/TWRP
 
@@ -133,7 +133,7 @@ You will now boot to SHRP/TWRP. Keep the phone plugged to your PC and continue a
 adb shell
 ```
 
-- Now we are issuing commands directly from inside POCO X3 Pro using the PC.
+- Now we are issuing commands directly from inside Xiaomi Mi 9 using the PC.
 
 ## Making the partitions
 
@@ -190,6 +190,6 @@ _Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the M
 
 _**Limited emergency calling**_
 
-_Running Windows on your POCO X3 Pro is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
+_Running Windows on your Xiaomi Mi 9 is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
 
 _**Hello from Seattle (US), France, Italy.**_

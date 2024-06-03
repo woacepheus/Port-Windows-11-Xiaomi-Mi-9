@@ -4,7 +4,7 @@
 
 This guide will get you the latest currently supported _stable_ version of Windows 11, which is the recommended option for most people to use on your device.
 
-Windows Insider Program's channel builds may be more unstable, and less tested for use on POCO X3 Pro. They'll also break more often than production versions, and require more recurrent updating.
+Windows Insider Program's channel builds may be more unstable, and less tested for use on Xiaomi Mi 9. They'll also break more often than production versions, and require more recurrent updating.
 
 If you value stability, please follow below's commands and steps to download the latest stable version of Windows 11:
 
@@ -65,6 +65,6 @@ _Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the M
 
 _**Limited emergency calling**_
 
-_Running Windows on your POCO X3 Pro is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
+_Running Windows on your Xiaomi Mi 9 is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
 
 _**Hello from Seattle (US), France, Italy.**_

@@ -1,36 +1,37 @@
-<img align="right" src="https://github.com/woa-vayu/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" src="https://github.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/blob/main/cepheus.png" width="425">
 
 
-# Running Windows on the POCO X3 Pro
+# Running Windows on the Xiaomi Mi 9
 
 ## Updating Drivers
 
 ### Prerequisites
-- [Recovery image](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/tag/Recoveries)
+- Windows on your Xiaomi Mi 9
+- [Drivers](https://github.com/qaz6750/XiaoMi9-Drivers/releases)
+- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [UEFI image](https://github.com/woa-vayu/msmnilePkg/releases/latest)
-
-- [Drivers](https://github.com/woa-vayu/Vayu-Drivers/releases/latest)
-
-### Boot into TWRP
-> If your recovery has been replaced by the stock recovery, flash it again using
+### Boot the modded recovery
+> If Xiaomi has replaced your recovery back to stock, flash it again in fastboot with:
 ```cmd
-fastboot flash recovery <recovery.img> reboot recovery
+fastboot flash recovery path\to\recovery-cepheus.img reboot recovery
 ```
 
-#### Activate mass storage mode
-> If it asks you to run it once again, do so
+#### Enter mass storage mode
+> Run it twice if it tells you to
 ```cmd
 adb shell msc
 ```
 
-### Diskpart
+#### Start the Windows disk manager
+> Once the Mi 9 is detected as a disk
 ```cmd
 diskpart
 ```
 
-#### Select the Windows volume of the tablet
-> Use `list volume` to find it, it's the one named **WINVAYU**
+### Assign `X` to Windows volume
+
+#### Select the Windows volume of the phone
+> Use `list volume` to find it, it's the one named "WINCEPHEUS"
 ```diskpart
 select volume <number>
 ```
@@ -46,37 +47,9 @@ exit
 ```
 
 ### Installing drivers
-Unpack the Drivers archive you've downloaded earlier and run the `OfflineUpdater.cmd` script
-> When it asks you for the drive letter, enter **X**
-  
-### Reboot to fastboot to flash UEFI
-> You can also use the WOA Helper app, in which case you can reboot with ```adb reboot```
->
-> Make sure you use the latest UEFI, because Windows might not boot if you update drivers without updating the UEFI
-```cmd
-adb reboot bootloader
-```
+> Extract the drivers archive and open the 'OfflineUpdater.cmd' file. Type the drive letter of WINCEPHEUS (should be X) and hit enter.
 
-#### Boot with Windows bootable UEFI image
-> Replace <uefi.img> with the actual path of the UEFI image
-```cmd
-fastboot flash boot <uefi.img>
-```
+### Reboot to Windows
+> Restore your "Windows" boot.img backup in TWRP and reboot your phone.
+
 ## Finished!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

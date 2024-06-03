@@ -1,34 +1,28 @@
-<img align="right" src="https://github.com/woa-vayu/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" src="https://raw.githubusercontent.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/main/cepheus.png" width="425" alt="Windows 11 Running On A Xiaomi Mi 9">
 
-# Запуск Windows на POCO X3 Pro
+# Windows на Xiaomi Mi 9
 
-## Удаление 
+## Удаление
 
 ### Зачем это нужно?
-Если вы хотите удалить Windows, этот гайд используется вместо удаления разделов вручную, а также чтобы избежать ошибки.
 
-Если вы хотите заблокировать загрузчик, вам потребуется, чтобы таблица разделов была стоковой
-### Prerequisites
-- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
-  
-- [Образ recovery](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/tag/Recoveries)
+Если вы хотите удалить Windows, это используется вместо удаления разделов вручную, чтобы избежать человеческой ошибки + написание целого специального руководства по простому удалению.
 
-### Прошейте и загрузите модифицированное recovery
-> Замените `<recovery.img>` путём к образу recovery
+Если вы хотите заблокировать загрузчик, вам понадобится стандартная таблица разделов.
+
+### Требования
+
+- [ADB и Fastboot](https://developer.android.com/studio/releases/platform-tools)
+- [gpt_both0.bin](../../../../releases/tag/1.0)
+
+### Восстановление GPT
+> Замените ```<gpt_both0.bin>``` путём к файлу `gpt_both0.bin`.
+
 ```cmd
-fastboot flash recovery <recovery.img> reboot recovery
+fastboot flash partition:0 <gpt_both0.bin>
 ```
 
-#### Восстановите таблицу разделов 
-> [!Warning]
-> Это приведет к удалению файлов Android. При необходимости сначала создайте резервную копию.
+### Очистите раздел `userdata` чтобы избежать цикличной перезагрузки и восстановить размер файловой системы
 ```cmd
-adb shell restore
+fastboot -w
 ```
-
-### Перезагрузитесь в Android 
-```cmd
-adb reboot 
-```
-
-## Готово!

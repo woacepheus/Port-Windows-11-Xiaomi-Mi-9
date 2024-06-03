@@ -1,29 +1,29 @@
-<img align="right" src="https://github.com/woa-vayu/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" src="https://raw.githubusercontent.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/main/cepheus.png" width="425" alt="Windows 11 Running On A Xiaomi Mi 9">
 
-# Running Windows on the POCO X3 Pro
+# Running Windows on the Xiaomi Mi 9
 
 ## Dualbooting Android and Windows seamlessly
 
 ### Prerequisites
-- A rooted vayu with Windows already installed
-- [Secure Boot UEFI image](https://github.com/woa-vayu/msmnilePkg/releases/latest)
-- [M3K WoA Helper](https://github.com/woa-vayu/WoA-Helper-M3K/releases/latest)
-- [StA Installer](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/tag/dualboot)
+- [UEFI](https://github.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/releases/download/1.2/MuCepheusSecureBoot.img)
+
+- [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
 ## Setting up the dualboot app
-> This guide assumes you are rooted, if you aren't, please do this first
+> This guide assumes you are rooted, if you aren't, please do that first
 
 ### Setup - Android
-- Download and install the **M3K WoA Helper** app, then open it and grant it root access.
-- Download the **Secure Boot UEFI image** for your panel and place it inside the folder named `UEFI` in your internal storage.
-- Press the `MOUNT WINDOWS` button, then download and move **StA_Installer_vayu.exe** to the newly created `Windows` folder in your internal storage.
-- Return to the M3K WoA Helper app and press `QUICKBOOT TO WINDOWS`.
-  
-> [!NOTE]
-> The first Windows boot can take up to 10 minutes, don't worry and just wait
+- Download and install the **WOA Helper** app, then open it and grant it root access.
+- Download the **UEFI image** and place it inside the folder named `UEFI` in your internal storage.
+- Open the WOA Helper app and use the **STA CREATOR** in **WOA TOOLBOX**.
+> [!Important]
+> If `/sdcard/Windows` is empty, your rom does not support mounting and you will have to make a boot.img backup inside the app, then copy it manually to Windows once you boot to it (for example by uploading it somewhere and then downloading it while booted into Windows). The same applies to the StA files, which are also generated in your internal storage.
+>
+> Do the same thing if the folder is read-only.
+- Press the **QUICKBOOT TO WINDOWS** button.
 
 ### Setup - Windows
-- Navigate to `C:\StA_Installer_vayu.exe` and run it. If it doesn't work, make sure that any antivirus software is off, as it will probably not let the app run
+- Navigate to `C:\sta` and create a shortcut of **sta.exe** to your desktop, if one isn't already present
 
 #### Booting to Android
 - Run the new shortcut on your desktop (you can also pin it to your start menu / taskbar for ease of access)
@@ -32,20 +32,6 @@
 - Press `QUICKBOOT TO WINDOWS` inside the app, or use the newly created toggle in your quick settings panel
   
 ## Finished!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

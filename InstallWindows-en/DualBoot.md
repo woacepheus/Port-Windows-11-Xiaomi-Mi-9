@@ -11,24 +11,24 @@ Table of Contents:
 
 ## Files/Tools Needed 📃
 
-- You will need the following files from the [BSP Release page](https://github.com/woa-vayu-archive/POCOX3Pro-Releases/releases/latest):
+- You will need the following files from the [BSP Release page](https://github.com/qaz6750/XiaoMi9-Drivers/releases/latest):
 
 UEFI Image:
 
 | File Name                              | Target Device         |
 |----------------------------------------|-----------------------|
-| POCO.X3.Pro.UEFI.img                   | POCO X3 Pro           |
+| MuCepheusSecureBoot.img                | Xiaomi Mi 9           |
 
 StA Installer:
 | File Name                              | Target Device         |
 |----------------------------------------|-----------------------|
-| [StA_Installer_vayu.exe](https://github.com/woa-vayu/Port-Windows-11-POCO-X3-Pro/releases/tag/dualboot)                | POCO X3 Pro           |
+| [StA_Installer_vayu.exe](https://github.com/woa-vayu/Port-Windows-11-POCO-X3-Pro/releases/tag/dualboot)                | POCO X3 Pro/Xiaomi Mi 9               |
 
 M3K WoA Helper:
 
 | File Name                              | Target Device         |
 |----------------------------------------|-----------------------|
-| [M3K-WoA-Helper.apk](https://github.com/woa-vayu-archive/WoA-Helper-M3K/releases/latest)                | POCO X3 Pro           |
+| [M3K-WoA-Helper.apk](https://github.com/woa-vayu-archive/WoA-Helper-M3K/releases/latest)                | POCO X3 Pro / Xiaomi Mi 9               |
 
 - Stock device boot.img image obtained from an ota package, or from the device itself using **M3K WoA Helper**.
 - Rooted POCO X3 Pro with Windows already installed

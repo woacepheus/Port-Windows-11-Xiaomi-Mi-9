@@ -1,66 +1,61 @@
-<img align="right" src="https://github.com/woa-vayu/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" src="https://raw.githubusercontent.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/main/cepheus.png" width="425" alt="Windows 11 Running On A Xiaomi Mi 9">
 
+# Windows на Xiaomi Mi 9
 
-# Запуск Windows на POCO X3 Pro
+## Обновление драйверов
 
-## Обновление драйверов 
+### Требования
 
-### Требования 
-- [Образ recovery](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/tag/Recoveries)
+- Windows на вашем Xiaomi Mi 9
+- [Recovery](../../../../releases/tag/1.0)
+- [Драйверы](https://github.com/qaz6750/XiaoMi9-Drivers/releases)
 
-- [Образ UEFI](https://github.com/woa-vayu/msmnilePkg/releases/latest)
-
-- [Драйвера](https://github.com/woa-vayu/Vayu-Drivers/releases/latest)
-
-### Загрузитесь в TWRP
-> Замените `<recovery.img>` действительным путём к recovery.img
-> Если ваше recovery было заменено стоковым, прошейте его снова используя
+### Запустите модифицированное рекавери
+> Если Xiaomi заменил ваше рекавери на miui рекавери, то прошейте через fastboot:
 ```cmd
-fastboot flash recovery <recovery.img> reboot recovery
+fastboot flash recovery путь\к\recovery-cepheus.img reboot recovery
 ```
 
-#### Активируйте режим mass storage 
-> Если он попросит вас запустить его ещё раз, сделайте это
+#### Запустите режим mass storage
 ```cmd
 adb shell msc
 ```
 
-### Diskpart
+### Привязка букв к разделам
+
+#### Запустите Менеджер дисков Windows
+
+> Как только планшет определился как диск
+
 ```cmd
 diskpart
 ```
 
-#### Выберите раздел Windows телефона
-> Используйте `list volume` чтобы найти его, он называется **WINVAYU**
+
+### Привязка буквы  `X` к разделу Windows
+
+#### Выберите Windows раздел планшета
+> Используйте команду `list volume` чтобы найти разделы "WINNABU"
+
 ```diskpart
 select volume <number>
 ```
 
 #### Привяжите букву X
 ```diskpart
-assign letter x
+assign letter=x
 ```
 
-#### Выйдите из diskpart
+#### Закройте diskpart
 ```diskpart
 exit
 ```
 
-### Установка драйверов 
-Распакуйте архив драйверов который вы скачали ранее и запустите файл `OfflineUpdater.cmd` 
-> Когда скрипт запросит у вас букву диска, введите **X:**
-  
-### Перезагрузитесь в fastboot чтобы прошить UEFI
-> Вы также можете использовать приложение WOA Helper, в этом случае вы можете перезагрузиться с помощью ``adb reboot``.
->
-> Убедитесь, что вы используете последнюю версию UEFI, поскольку Windows может не загрузиться, если вы обновите драйверы без обновления UEFI
-```cmd
-adb reboot bootloader
-```
 
-#### Загрузитесь в Windows
-> Замените <uefi.img> путём к образу UEFI 
-```cmd
-fastboot flash boot <uefi.img>
-```
+### Установка драйверов
+> Распакуйте драйвера из архива и откройте 'OfflineUpdater.cmd' файл. Впишите букву диска WINCEPHEUS (Должно быть X) и нажмите enter. 
+
+### Перезагрузитесь в Windows
+> Восстановите резерную копию boot.img "Windows" в TWRP и перезагрузите телефон.
+
 ## Готово!

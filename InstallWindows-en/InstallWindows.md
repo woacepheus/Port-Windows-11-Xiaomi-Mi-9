@@ -1,4 +1,4 @@
-# Install Windows on POCO X3 Pro
+# Install Windows on Xiaomi Mi 9
 
 ## A few notes
 
@@ -7,7 +7,7 @@
 >
 > ℹ️ We recommend you know what you're getting into here. You need to know a bit about command line interfaces, Windows technical aspects. We won't teach you how to port the OS yourself, we've done this for you, but this is not for beginners or common users either. Tech Savvy people only or technical people only please, or you'll regret it or commit mistakes!
 >
-> ℹ️ We do not recommend you buy a POCO X3 Pro to try this on without fully understanding what you're getting into. We do not commit to future work or potential functionality, buy the device for what it can offer you today, not tomorrow, or you'll regret it. If you already own a POCO X3 Pro and want to try it, feel free 🙂 But do not buy this with hopes of it replacing your laptop, buy a laptop instead 🙂 (Even if this is the long term goal for us)
+> ℹ️ We do not recommend you buy a Xiaomi Mi 9 to try this on without fully understanding what you're getting into. We do not commit to future work or potential functionality, buy the device for what it can offer you today, not tomorrow, or you'll regret it. If you already own a Xiaomi Mi 9 and want to try it, feel free 🙂 But do not buy this with hopes of it replacing your laptop, buy a laptop instead 🙂 (Even if this is the long term goal for us)
 
 There are three methods to install Windows:
 
@@ -28,6 +28,6 @@ _Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the M
 
 _**Limited emergency calling**_
 
-_Running Windows on your POCO X3 Pro is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
+_Running Windows on your Xiaomi Mi 9 is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
 
 _**Hello from Seattle (US), France, Italy.**_

@@ -1,35 +1,31 @@
-<img align="right" src="https://github.com/woa-vayu/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" src="https://raw.githubusercontent.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/main/cepheus.png" width="425" alt="Windows 11 Running On A Xiaomi Mi 9">
+
+# Windows на Xiaomi Mi 9
+
+## Переустановка
+### Переустановка Windows если что-то пошло не так
+
+- Если текущая версия Windows не подходит или была испорчена, вероятно, Вам поможет переустановка Windows, благо это довольно простой процесс.
+- Если Вы не восстанавливали таблицу разделов, то используйте этот гайд с текущей таблицей разделов.
+
+### Требования
+
+- Существующие разделы для Windows и загрузки (*если их нет, [используйте данную инструкцию](/guide/Russian/partition-ru.md)*)
+- [Образ рекавери](../../../../releases/tag/1.0)
+- [ADB и Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
 
-# Запуск Windows на POCO X3 Pro
 
-## Переустановка 
-Если вам не нравится ваша версия Windows, или вы совершили ошибку при установке, или что-то ещё, вам нужно просто переустановить Windows. К счастью, этот процесс очень прост.
-
-> [!IMPORTANT]
-> Совершенно очевидно, что это приведет к удалению всех ваших файлов в Windows. Если вы хотите создать резервную копию, вы можете сделать это, смонтировав Windows с помощью приложения [WOA Helper](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/releases/download/dualboot/woahelper.apk) и вручную скопировав любые файлы, которые вы хотите сохранить
-
-
-### Требования 
-
-- ```Существующие разделы Windows и ESP``` (*If not met, [go back and just pretend this guide never existed](/guide/English/install-1-en.md)*)
-
-- [```Образ recovery```](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/tag/Recoveries)
-
-- [```Android platform tools```](https://developer.android.com/studio/releases/platform-tools)
-
-#### Загрузитесь в TWRP
-> Замените `<recovery.img>` действительным путём к recovery.img
-> Если ваше recovery было заменено стоковым, прошейте его снова используя
+### Запустите модифицированное рекавери
+> Если Xiaomi заменил ваше рекавери на miui рекавери, то прошейте через fastboot:
 ```cmd
-fastboot flash recovery <recovery.img> reboot recovery
+fastboot flash recovery путь\к\recovery-cepheus.img reboot recovery
 ```
 
-### Отформатируйте разделы
-> Если он попросит вас запустить его ещё раз, сделайте это
+### Форматирование разделов
+
 ```cmd
 adb shell format
 ```
 
-## [Следующий шаг: Переустановка Windows](/guide/English/install-2-en.md)
-  
+### [Следующий шаг](/guide/Russian/install-ru.md#установка-windows)

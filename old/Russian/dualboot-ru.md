@@ -1,35 +1,40 @@
-<img align="right" src="https://github.com/woa-vayu/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" src="https://raw.githubusercontent.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/main/cepheus.png" width="425" alt="Windows 11 Running On A Xiaomi Mi 9">
 
-# Запуск Windows на POCO X3 Pro
+# Запуск Windows на Xiaomi Mi 9
 
 ## Двойная загрузка Android и Windows
+> [!Important]
+> Ваше устройство должно быть с рут правами чтобы использовать этот гайд.
 
-### Требования 
-- Рутированный vayu с уже установленной Windows
-- [Образ Secure Boot UEFI](https://github.com/woa-vayu/msmnilePkg/releases/latest)
-- [M3K WoA Helper](https://github.com/woa-vayu/WoA-Helper-M3K/releases/latest)
-- [StA Installer](https://github.com/woa-vayu-archive/Port-Windows-11-POCO-X3-Pro/releases/tag/dualboot)
+### Требования
+- [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
 
-## Настройка приложения dualboot
-> В этом гайде предполагается, что у вас есть root, если это не так, пожалуйста, сделайте это в первую очередь
+- [UEFI](https://github.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/releases/download/1.2/MuCepheusSecureBoot.img)
 
-### Установка - Android
-- Скачайте и установите приложение **M3K WoA Helper**, затем откройте его и предоставьте ему root-доступ.
-- Скачайте **образ Secure Boot UEFI** для вашего дисплея и поместите его в папку `UEFI` в вашем внутреннем хранилище.
-- Нажмите кнопку `MOUNT WINDOWS`, затем скачайте и переместите **StA_Installer_vayu.exe** в только что созданную папку `Windows` в вашем внутреннем хранилище.
-- Вернитесь в приложение M3K WoA Helper и нажмите `QUICKBOOT TO WINDOWS`.
-  
+- [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
+
+- [StA Installer](https://github.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/releases/download/Dualboot/StA_Installer_cepheus.exe)
+
+#### Настройка - Android
 > [!NOTE]
-> Первая загрузка в Windows может занять до 10 минут, не волнуйтесь и просто подождите
+>
+> Чтобы смонтировать Windows во время загрузки Android, вам необходимо правильно «выключить» Windows. Для этого перезагрузите Windows, а затем загрузитесь в TWRP, когда экран станет черным. Отсюда вы можете вернуться на Android, используя резервную копию, сделанную ранее.
 
-### Установка - Windows
-- Перейдите к `C:\StA_Installer_vayu.exe` и запустите его. Если это не сработает, убедитесь, что все антивирусные программы отключены, так как они, вероятно, не позволят приложению запуститься
+- Скачайте и установите [WOA Helper](https://github.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/releases/download/Dualboot/woahelper.apk)
+- Скачайте [образ UEFI](https://github.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/releases/download/1.2/MuCepheusDisableSecureBoot.img) и перенесите в папку с названием `UEFI` в внутренней памяти, если папки нету создайте её.
+- Выберите «Backup to Android», а затем закройте всплывающее окно. Выберите обе `Windows` и `Android` опции.
+- Сделайте то же самое, но выберете «Backup to Windows» 
+- Нажмите кнопку «Mount Windows», после чего скачайте [StA_Installer_cepheus.exe](https://github.com/woacepheus/Port-Windows-11-Xiaomi-Mi-9/releases/download/Dualboot/StA_Installer_cepheus.exe) и перенесите в новую папку `Windows` в вашей внутренней памяти.
+- Вернитесь в приложение и нажмите «Quickboot to windows»
+
+### Настройка - Windows
+- Перейдите к `C:\StA_Installer_cepheus.exe` и запустите его. Если это не сработает, убедитесь, что все антивирусные программы отключены, поскольку они, вероятно, не позволят приложению запуститься.
+
 
 #### Загрузка в Android
-- Запустите новый ярлык на своем рабочем столе (вы также можете прикрепить его к меню "Пуск" / панели задач для удобства доступа).
+- Запустите новый ярлык на рабочем столе (вы также можете закрепить его в меню «Пуск» или на панели задач для удобства доступа).
 
-#### Загрузка в Windows
-- Нажмите `QUICKBOOT TO WINDOWS` в приложении или воспользуйтесь недавно созданным переключателем на панели быстрых настроек
-  
+#### Загрузка в Windows 
+- Нажмите `Quickboot to Windows` внутри приложения или воспользуйтесь вновь созданным переключателем на панели быстрых настроек.
+
 ## Готово!
-
