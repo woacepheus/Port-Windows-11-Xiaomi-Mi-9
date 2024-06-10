@@ -127,12 +127,6 @@ fastboot reboot recovery
 
 You will now boot to SHRP/TWRP. Keep the phone plugged to your PC and continue along.
 
-- Now, let's open a shell onto the device, by running the following command
-
-```batch
-adb shell
-```
-
 - Now we are issuing commands directly from inside Xiaomi Mi 9 using the PC.
 
 ## Making the partitions
