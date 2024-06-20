@@ -2,14 +2,12 @@
 
 ## Files/Tools Needed 📃
 
-- SHRP/TWRP image:
+- TWRP image:
 
 Twrp image supports Android™ 11 encryption
-Shrp image supports Android™ 12/12.1/13/14 encryption
 
 | File Name                                       | Target Device         |
 |-------------------------------------------------|-----------------------|
-| [shrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/shrp-recovery.img) | Xiaomi Mi 9 |
 | [twrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/twrp-cepheus.img) | Xiaomi Mi 9 |
 
 ## Disclaimers
@@ -67,13 +65,13 @@ Save the file on your computer, and extract the zip file by opening it, and sele
   </p>
 </details>
 
-## Booting to SHRP/TWRP
+## Booting to TWRP
 
 - Reboot your deivce into recovery
 
 ## Restoring the original partitions
 
-- Once booted into SHRP/TWRP, run the following command:
+- Once booted into TWRP, run the following command:
 
 ```batch
 adb shell restore

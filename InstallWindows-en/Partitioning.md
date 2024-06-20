@@ -2,14 +2,12 @@
 
 ## Files/Tools Needed 📃
 
-- SHRP/TWRP image:
+- TWRP image:
 
 Twrp image supports Android™ 11 encryption
-Shrp image supports Android™ 12/12.1/13/14 encryption
 
 | File Name                                       | Target Device         |
 |-------------------------------------------------|-----------------------|
-| [shrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/shrp-recovery.img) | Xiaomi Mi 9 |
 | [twrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/twrp-cepheus.img) | Xiaomi Mi 9 |
 
 - [Platform Tools from Google (ADB and Fastboot)](https://developer.android.com/studio/releases/platform-tools)
@@ -107,7 +105,7 @@ adb reboot bootloader
 
 You will be rebooted to Xiaomi Mi 9's bootloader.
 
-## Booting to SHRP/TWRP
+## Booting to TWRP
 
 - Plug your phone to your PC, open a command prompt and start by typing the following text, but do not press enter just yet
 
@@ -115,7 +113,7 @@ You will be rebooted to Xiaomi Mi 9's bootloader.
 fastboot flash recovery
 ```
 
-- Go find the SHRP/TWRP image file you downloaded earlier, right click it, click "Copy as path"
+- Go find the TWRP image file you downloaded earlier, right click it, click "Copy as path"
 
 - Then go back to the Command Prompt window we started writing text in previously, and simply, right click on it with your mouse (or long press if you're on a touch device) and press enter
 
@@ -125,7 +123,7 @@ fastboot flash recovery
 fastboot reboot recovery
 ```
 
-You will now boot to SHRP/TWRP. Keep the phone plugged to your PC and continue along.
+You will now boot to TWRP. Keep the phone plugged to your PC and continue along.
 
 - Now we are issuing commands directly from inside Xiaomi Mi 9 using the PC.
 

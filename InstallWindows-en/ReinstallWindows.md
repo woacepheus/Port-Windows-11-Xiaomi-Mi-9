@@ -17,14 +17,12 @@ Windows Drivers:
 | XiaoMi9-Drivers-Desktop.zip                     | Xiaomi Mi 9           |
 | XiaoMi9-Drivers-Desktop.7z                      | Xiaomi Mi 9           |
 
-- SHRP/TWRP image:
+- TWRP image:
 
 Twrp image supports Android™ 11 encryption
-Shrp image supports Android™ 12/12.1/13/14 encryption
 
 | File Name                                       | Target Device         |
 |-------------------------------------------------|-----------------------|
-| [shrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/shrp-recovery.img) | Xiaomi Mi 9 |
 | [twrp-cepheus.img](https://github.com/woacepheus/Port-Windows-11-XiaoMI-9/releases/download/recoveries/twrp-cepheus.img) | Xiaomi Mi 9 |
 
 - [Platform Tools from Google (ADB and Fastboot)](https://developer.android.com/studio/releases/platform-tools)
@@ -90,7 +88,7 @@ Save the file on your computer, and extract the zip file by opening it, and sele
   </p>
 </details>
 
-## Booting to SHRP/TWRP
+## Booting to TWRP
 
 - Reboot your deivce into recovery
 
@@ -104,9 +102,9 @@ Now the Windows Partition on your Xiaomi Mi 9 should be empty. Let's go ahead an
 
 ## Getting to Mass Storage Mode
 
-- Please turn your phone and boot to SHRP/TWRP again before proceding further
+- Please turn your phone and boot to TWRP again before proceding further
 
-- Let's run the mass storage shell script in order to boot into Mass Storage from SHRP/TWRP. You must decrypt your data if it asks you to.
+- Let's run the mass storage shell script in order to boot into Mass Storage from TWRP. You must decrypt your data if it asks you to.
 
 ```batch
 adb shell msc
