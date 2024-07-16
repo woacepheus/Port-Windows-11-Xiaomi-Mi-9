@@ -71,7 +71,7 @@ Shrp image supports Android™ 12/12.1/13/14 encryption
 
 You will end up with both Android™ and Windows on your Xiaomi Mi 9. Android™ and Windows will both split the internal storage.
 
-Android™ will boot normally, and you will have to use a PC to boot Windows when needed, unless you flash UEFI in boot partition or use M3K WoA Helper.
+Android™ will boot normally, and you will have to use a PC to boot Windows when needed, unless you flash UEFI in boot partition or use M3K Helper.
 
 # Steps 🛠️
 

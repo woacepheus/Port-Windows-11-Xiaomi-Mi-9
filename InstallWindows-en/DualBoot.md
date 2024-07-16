@@ -5,7 +5,7 @@ Table of Contents:
 * [Enabling Dual Boot](#enabling-dual-boot)
    * [Files/Tools Needed 📃](#filestools-needed-)
    * [Steps 🛠️](#steps-️)
-      * [Installing M3K WoA Helper](#installing-m3k-woa-helper)
+      * [Installing M3K Helper](#installing-m3k-woa-helper)
       * [Installing StA](#installing-sta)
       * [How it Works](#how-it-works)
 
@@ -22,25 +22,25 @@ UEFI Image:
 StA Installer:
 | File Name                              | Target Device         |
 |----------------------------------------|-----------------------|
-| [StA_Installer_vayu.exe](https://github.com/woa-vayu/Port-Windows-11-POCO-X3-Pro/releases/tag/dualboot)                | POCO X3 Pro/Xiaomi Mi 9               |
+| [StA_Installer_vayu.exe](https://github.com/woa-vayu/POCOX3Pro-Guides/raw/main/Files/StA_Installer_vayu.exe)                | POCO X3 Pro/Xiaomi Mi 9               |
 
-M3K WoA Helper:
+M3K Helper:
 
 | File Name                              | Target Device         |
 |----------------------------------------|-----------------------|
-| [M3K-WoA-Helper.apk](https://github.com/woa-vayu-archive/WoA-Helper-M3K/releases/latest)                | POCO X3 Pro / Xiaomi Mi 9               |
+| [M3K-HelperX.X.apk	](https://github.com/woa-vayu/WoA-Helper-M3K/releases/latest)                | POCO X3 Pro / Xiaomi Mi 9               |
 
-- Stock device boot.img image obtained from an ota package, or from the device itself using **M3K WoA Helper**.
+- Stock device boot.img image obtained from an ota package, or from the device itself using **M3K Helper**.
 - Rooted POCO X3 Pro with Windows already installed
 
 # Steps 🛠️
 
-## Installing M3K WoA Helper
+## Installing M3K Helper
 
-- Download and install the M3K WoA Helper, then open it and grant it root access.
+- Download and install the M3K Helper, then open it and grant it root access.
 - Download the UEFI image and place it inside the folder named ```UEFI``` in your internal storage.
 - Press the ```Mount Windows``` button, then download and move StA_Installer_vayu.exe to the newly created ```Windows``` folder in your internal storage.
-- Return to the M3K WoA Helper and press ```QuickBoot to Windows```.
+- Return to the M3K Helper and press ```QuickBoot to Windows```.
 
 Your device will now boot into Windows
 
@@ -51,7 +51,7 @@ Your device will now boot into Windows
 ## How it Works
 
 - To boot Android™, run ```Switch to Android``` shortcut on your desktop or start menu
-- To boot Windows, press ```QuickBoot to Windows``` inside the M3K WoA Helper
+- To boot Windows, press ```QuickBoot to Windows``` inside the M3K Helper
 
 ---
 
