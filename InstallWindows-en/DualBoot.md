@@ -5,7 +5,7 @@ Table of Contents:
 * [Enabling Dual Boot](#enabling-dual-boot)
    * [Files/Tools Needed 📃](#filestools-needed-)
    * [Steps 🛠️](#steps-️)
-      * [Installing M3K Helper](#installing-m3k-woa-helper)
+      * [Installing M3K Helper](#installing-m3k-helper)
       * [Installing StA](#installing-sta)
       * [How it Works](#how-it-works)
 
