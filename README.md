@@ -9,7 +9,7 @@ Heavily based on [Surface Duo guide](https://github.com/WOA-Project/SurfaceDuo-G
 ### A few notes
 
 > [!NOTE]
-> Welcome 🥰! Thanks for being interested in trying out this project. We thought the following notes may interest you first before proceeding further:
+> Welcome 🥰! Thanks for being interestВЫ ВСЕ ЩАВЕЛИ ЕБАННЫЕed in trying out this project. We thought the following notes may interest you first before proceeding further:
 >
 > ℹ️ We recommend you know what you're getting into here. You need to know a bit about command line interfaces, Windows technical aspects, as this is not for the faint of heart yet! We won't teach you how to port the OS yourself, we've done this for you, but this is not for beginners or common users either. Tech Savvy people only or technical people only please, or you'll regret it or commit mistakes that may take some time to solve with us!
 >
